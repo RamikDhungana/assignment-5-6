@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Currency Converter</h1>
+    <div class="converter">
+        <label for="usdAmount">Amount in USD:</label>
+        <input type="number" id="usdAmount" name="usdAmount" step="0.01" min="0">
+        <button onclick="convertUSDToCAD()">Convert to CAD</button>
+        <p id="cadResult"></p>
+    </div>
+    <div class="converter">
+        <label for="cadAmount">Amount in CAD:</label>
+        <input type="number" id="cadAmount" name="cadAmount" step="0.01" min="0">
+        <button onclick="convertCADToUSD()">Convert to USD</button>
+        <p id="usdResult"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
